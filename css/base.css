@@ -1,14 +1,9 @@
-#body {
-#  background-color: #2d2d2d;
-#}
-.div_text {
-    font-family:"courier new";
-    font-size: 24px;
+body { 
+    background:url(http://scotch.io/wp-content/uploads/2014/07/61.jpg); 
 }
-.div_outer {
-    height:95%;
-    width:100px;
-    border:1px solid black;
+.div_text {
+    font-family:"roboto";
+    font-size: 24px;
 }
 .div_inner {
     padding: 5px;
@@ -16,16 +11,20 @@
 .div_empty {
     float: left;
     width: 10%;
+    #border:1px solid #995555;
     border:1px solid transparent;
 }
 .div_op1 {
+    #border:1px solid #995555;
     text-align: right;
 }
 .div_sign {
     float: left;
     width: 10%;
+    #border:1px solid cyan;
 }
 .div_op2 {
+    #border:1px solid #aaaa55;
     text-align: right;
 }
 .hr_line {
@@ -36,4 +35,40 @@
     margin: -5px 0px 5px 3px;
     width: 90%;
     text-align: right;
+}
+.problemSet {
+    list-style-type: none
+    display: inline;
+}
+.problem {
+    margin: 10px;
+    width:100px;
+    #border:1px solid black;
+    display: inline-block;
+    background: white;
+}
+
+/* overlay styles, all needed */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+/* just some content with arbitrary styles for explanation purposes */
+.modal {
+    width: 100px;
+    height: 200px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -50px;
+    #background-color: #f1c40f;
+    border-radius: 5px;
+    #text-align: center;
+    z-index: 11; /* 1px higher than the overlay layer */
 }
